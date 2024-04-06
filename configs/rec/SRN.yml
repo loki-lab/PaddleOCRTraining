@@ -80,7 +80,7 @@ Train:
         - gsrm_slf_attn_bias2
   loader:
     shuffle: false
-    batch_size_per_card: 32
+    batch_size_per_card: 64
     drop_last: false
     num_workers: 4
 Eval:
@@ -112,5 +112,5 @@ Eval:
   loader:
     shuffle: false
     drop_last: false
-    batch_size_per_card: 32
+    batch_size_per_card: 64
     num_workers: 4
