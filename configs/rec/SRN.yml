@@ -60,7 +60,7 @@ Train:
       - datasets/img_crop_training.txt
       - datasets/gen_labels_training.txt
     ratio_list:
-    - 1
+    - 2
     transforms:
     - DecodeImage:
         img_mode: BGR
@@ -93,7 +93,7 @@ Eval:
     - datasets/gen_labels_eval.txt
     - datasets/img_crop_eval.txt
     ratio_list:
-    - 1
+    - 2
     transforms:
     - DecodeImage:
         img_mode: BGR
