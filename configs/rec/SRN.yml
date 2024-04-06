@@ -57,8 +57,11 @@ Metric:
 
 Train:
   dataset:
-    name: LMDBDataSet
-    data_dir: ./train_data/data_lmdb_release/training/
+    name: SimpleDataSet
+    data_dir: datasets
+    label_file_list:
+    - datasets/img_crop_eval.txt
+    - datasets/gen_labels_eval.txt
     transforms:
       - DecodeImage: # load image
           img_mode: BGR
@@ -82,8 +85,11 @@ Train:
 
 Eval:
   dataset:
-    name: LMDBDataSet
-    data_dir: ./train_data/data_lmdb_release/validation/
+    name: SimpleDataSet
+    data_dir: datasets
+    label_file_list:
+    - datasets/img_crop_eval.txt
+    - datasets/gen_labels_eval.txt
     transforms:
       - DecodeImage: # load image
           img_mode: BGR
