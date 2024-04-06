@@ -1,0 +1,1 @@
+python3 -m paddle.distributed.launch --gpus '0'  tools/train.py -c configs/rec/SRN.yml -o Global.pretrained_model=rec_r50_vd_srn_train/best_accuracy
